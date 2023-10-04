@@ -1,5 +1,5 @@
 
-**##SIEMA##** SIEMA KRATOS TO JA dawajcie na teamspeaka bo nie slysze was
+**##SIEMA##** SIEMA krzysztof TO JA dawajcie na teamspeaka bo nie slysze was
 
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
