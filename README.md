@@ -1,6 +1,6 @@
 
 **##SIEMA##** SIEMA krzysztof TO JA dawajcie na teamspeaka bo nie slysze was
-
+edycja pliku Paweł
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
 When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
