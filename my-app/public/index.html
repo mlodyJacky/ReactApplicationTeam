@@ -25,9 +25,23 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>PIESKI</title>
+    <style>
+      .container {
+          display: flex; /* Ustawienie kontenera na flexbox */
+          align-items: center; /* Wyrównanie elementów w pionie */
+      }
+
+      img {
+          max-width: 100%; /* Ustawienie, aby obraz nie przekraczał szerokości kontenera */
+          height: auto; /* Ustawienie, aby proporcje obrazu były zachowane */
+      }
+  </style>
   </head>
   <body>
-    <h1>This text is created by Krzysztof</h1>
+    <div class="container">
+      <img src="jablkoPrawidlowe.jpg" alt="jabłko">
+      <h1>This text is created by KDUPAof</h1>
+    </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
     </div>
