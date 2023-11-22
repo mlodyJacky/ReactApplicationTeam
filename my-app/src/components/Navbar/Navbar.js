@@ -8,16 +8,16 @@ const Navbar = () => {
 		<>
 			<Nav>
 				<NavMenu>
-					<NavLink to="/about" activeStyle>
+                <NavLink to="/home" activeStyle>
+						Home
+					</NavLink>
+					<NavLink to="/krzywa" activeStyle>
 						About
 					</NavLink>
-					<NavLink to="/contact" activeStyle>
-						Contact Us
-					</NavLink>
-					<NavLink to="/blogs" activeStyle>
+					<NavLink to="/galeria" activeStyle>
 						Blogs
 					</NavLink>
-					<NavLink to="/sign-up" activeStyle>
+					<NavLink to="/komputery" activeStyle>
 						Sign Up
 					</NavLink>
 				</NavMenu>

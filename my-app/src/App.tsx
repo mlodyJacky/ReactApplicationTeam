@@ -17,22 +17,18 @@ function App() {
     <Router>
             <Navbar />
             <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route
-                    path="/contact"
-                    element={<Contact />}
-                />
-                <Route path="/blogs" element={<Blogs />} />
-                <Route
-                    path="/sign-up"
-                    element={<SignUp />}
+                <Route path="/home" element={<Home />} />
+                <Route path="/krzywa" element={<About />} />
+                <Route path="/galeria" element={<Blogs />} />
+                <Route path="/komputery" element={<SignUp />}
                 />
             </Routes>
         </Router>
-        
+    
+ /*       
     <div className="App">
       <header className="App-header">
+      
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -93,7 +89,7 @@ function App() {
         Twój ulubiony raper kłamie wciąż na trackach
         Gdzie to Lambo co mu kupił tata?</p>
       </header>
-    </div>
+    </div>*/
   );
 }
 
