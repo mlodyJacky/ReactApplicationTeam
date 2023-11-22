@@ -18,8 +18,10 @@ function App() {
         >
           Learn React
         </a>
-
-        <p>Plecak pełen cashu wypełniony aż po brzegi
+      </header>
+      <header className="App-text">
+      <p>
+        Plecak pełen cashu wypełniony aż po brzegi
         Auto pędzi, samo zmienia biegi
         IPhone ciągle kurwa brzęczy, już mnie męczy, wierz mi
         Nie chcę słuchać waszych nędznych bredni
