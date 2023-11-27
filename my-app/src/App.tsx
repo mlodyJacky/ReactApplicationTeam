@@ -8,9 +8,9 @@ import {
     Route,
 } from "react-router-dom";
 import Home from "./pages/home";
-import About from "./pages/krzywa";
-import Blogs from "./pages/galeria";
-import SignUp from "./pages/komputery";
+import Krzywa from "./pages/krzywa";
+import Galeria from "./pages/galeria";
+import Komputery from "./pages/komputery";
 
 function App() {
   return (
@@ -18,9 +18,9 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/home" element={<Home />} />
-                <Route path="/krzywa" element={<About />} />
-                <Route path="/galeria" element={<Blogs />} />
-                <Route path="/komputery" element={<SignUp />}
+                <Route path="/galeria" element={<Galeria />} />
+                <Route path="/krzywa" element={<Krzywa />} />
+                <Route path="/komputery" element={<Komputery />}
                 />
             </Routes>
         </Router>

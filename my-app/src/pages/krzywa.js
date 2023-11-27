@@ -2,15 +2,17 @@
 
 import React from "react";
 
-const About = () => {
+const Krzywa = () => {
 	return (
 		<div>
 			<h1>
-				GeeksforGeeks is a Computer Science portal
-				for geeks.
+			Jako uzytkownik na podstronie Krzywa chce widziec okreslone zdjecie
+			</h1>
+			<h1>
+			https://pawkrz.atlassian.net/browse/SCRUM-22?atlOrigin=eyJpIjoiODJjYmM3OWZhNDIxNGE4NmFlYWNiMDIxZWViMmUxM2UiLCJwIjoiaiJ9
 			</h1>
 		</div>
 	);
 };
 
-export default About;
+export default Krzywa;

@@ -2,8 +2,8 @@
 
 import React from "react";
 
-const Blogs = () => {
-	return <h1>You can write your blogs!</h1>;
+const Galeria = () => {
+	return <h1>Galeria</h1>;
 };
 
-export default Blogs;
+export default Galeria;
