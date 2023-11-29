@@ -1,8 +1,16 @@
 // Filename - pages/home.js
-import React from 'react';
 import logo from '../bananki.jpg';
+import React, { useState } from 'react';
+
+
 
 const Home = () => {
+  const [count, setCount] = useState(0);
+
+  // Function to increment the number
+  const incrementCount = () => {
+    setCount(count + 1);
+  }
 	return (
 		<div className="App">
       <header className="App-header">
@@ -19,6 +27,18 @@ const Home = () => {
         >
           Learn React
         </a>
+
+          <header className="App-text">
+          <p>
+            {/* Display the current count */}
+            KLIKNIEC: {count}
+          </p>
+          {/* Button to increment the count */}
+          <button onClick={incrementCount}>zinkrementuj</button>
+          
+          {/* The rest of your content */}
+          {/* ... */}
+        </header>
       </header>
       <header className="App-text">
       <p>
