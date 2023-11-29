@@ -12,6 +12,7 @@ import Krzywa from "./pages/krzywa";
 import Galeria from "./pages/galeria";
 import Komputery from "./pages/komputery";
 
+
 function App() {
   return (
     <Router>
@@ -24,6 +25,8 @@ function App() {
                 />
             </Routes>
         </Router>
+
+        
     
  /*       
     <div className="App">
