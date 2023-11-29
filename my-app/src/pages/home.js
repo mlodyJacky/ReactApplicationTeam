@@ -34,7 +34,7 @@ const Home = () => {
             KLIKNIEC: {count}
           </p>
           {/* Button to increment the count */}
-          <button onClick={incrementCount}>KLIKAJ</button>
+          <button onClick={incrementCount}>zinkrementuj</button>
           
           {/* The rest of your content */}
           {/* ... */}
