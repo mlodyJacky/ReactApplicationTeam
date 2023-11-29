@@ -66,6 +66,15 @@ const Home = () => {
         Ale płacze, gdy masz ze mną fotki
         Twój ulubiony raper kłamie wciąż na trackach
         Gdzie to Lambo co mu kupił tata?</p>
+
+      <br><br>
+      <p>Podaj 2 liczby:</p>
+      <input type="number" id="liczba1" placeholder="Liczba 1"></input>
+      <h1>+</h1>
+      <input type="number" id="liczba2" placeholder="Liczba 2"></input>
+      <button id="przycisk">Dodaj</button>
+
+
       </header>
     </div>
 	);
