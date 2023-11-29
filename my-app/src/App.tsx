@@ -1,11 +1,34 @@
 import React from 'react';
 import logo from './bananki.jpg';
 import './App.css';
+import Navbar from "./components/Navbar/Navbar";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+} from "react-router-dom";
+import Home from "./pages/home";
+import Krzywa from "./pages/krzywa";
+import Galeria from "./pages/galeria";
+import Komputery from "./pages/komputery";
 
 function App() {
   return (
+    <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/home" element={<Home />} />
+                <Route path="/galeria" element={<Galeria />} />
+                <Route path="/krzywa" element={<Krzywa />} />
+                <Route path="/komputery" element={<Komputery />}
+                />
+            </Routes>
+        </Router>
+    
+ /*       
     <div className="App">
       <header className="App-header">
+      
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -66,7 +89,7 @@ function App() {
         Twój ulubiony raper kłamie wciąż na trackach
         Gdzie to Lambo co mu kupił tata?</p>
       </header>
-    </div>
+    </div>*/
   );
 }
 
