@@ -80,6 +80,7 @@ const Home = () => {
       <br></br>
 
 
+
         <p>Podaj 2 liczby:</p>
         <input type="number" id="liczba1" placeholder="Liczba 1"></input>
         <h1>+</h1>
