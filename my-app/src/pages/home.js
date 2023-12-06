@@ -2,8 +2,13 @@
 import React, { useState } from 'react';
 import logo from '../bananki.jpg';
 
-
 const Home = () => {
+  const [count, setCount] = useState(0);
+
+  // Function to increment the number
+  const incrementCount = () => {
+    setCount(count + 1);
+  }
 
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [currentDate, setCurrentDate] = useState('');
@@ -35,6 +40,18 @@ const Home = () => {
         >
           Learn React
         </a>
+
+          <header className="App-text">
+          <p>
+            {/* Display the current count */}
+            KLIKNIEC: {count}
+          </p>
+          {/* Button to increment the count */}
+          <button onClick={incrementCount}>zinkrementuj</button>
+          
+          {/* The rest of your content */}
+          {/* ... */}
+        </header>
         <div className='window'>
           <button type="submit" className="btn" onClick={openPopup}>Data</button>
           <div className={`popup ${isPopupOpen ? 'open-popup' : ''}`} id="popup">
