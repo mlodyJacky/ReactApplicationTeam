@@ -1,8 +1,19 @@
 // Filename - pages/home.js
 import React, { useState } from 'react';
+import React, { useState } from 'react';
 import logo from '../bananki.jpg';
 
 const Home = () => {
+  const [suma1, setCount2] = useState(0);
+
+  const wypisz = () => {
+    // pobiera wartosci z pol tekstowych do zmiennych
+    const liczba1 = parseFloat(document.getElementById('liczba1').value) || 0;
+    const liczba2 = parseFloat(document.getElementById('liczba2').value) || 0;
+
+    setCount2(liczba1 + liczba2);
+  };
+
   const [count, setCount] = useState(0);
 
   // Function to increment the number
@@ -110,6 +121,20 @@ const Home = () => {
         Ale płacze, gdy masz ze mną fotki
         Twój ulubiony raper kłamie wciąż na trackach
         Gdzie to Lambo co mu kupił tata?</p>
+
+      <br></br>
+
+
+
+        <p>Podaj 2 liczby:</p>
+        <input type="number" id="liczba1" placeholder="Liczba 1"></input>
+        <h1>+</h1>
+        <input type="number" id="liczba2" placeholder="Liczba 2"></input>
+        <br></br>
+        <br></br>
+        <button id="przycisk" onClick={wypisz}>Dodaj</button>
+        <br></br>
+        <h1>Suma: {suma1}</h1>
       </header>
     </div>
 	);
