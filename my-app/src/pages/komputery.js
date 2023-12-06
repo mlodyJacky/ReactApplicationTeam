@@ -12,7 +12,7 @@ const Komputery = () => {
 	return (
         <div>
             <input type='text' name="text" id="inputText" />
-            <button onclick="pushData()">add to list</button>
+            <button onClick={pushData}>add to list</button>
 
             <li>
             <ul id="view">
