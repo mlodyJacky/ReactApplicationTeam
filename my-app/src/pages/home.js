@@ -1,22 +1,44 @@
 // Filename - pages/home.js
 import React, { useState } from 'react';
+import React, { useState } from 'react';
 import logo from '../bananki.jpg';
 
 const Home = () => {
-  const [suma1, setCount] = useState(0);
+  const [suma1, setCount2] = useState(0);
 
   const wypisz = () => {
     // pobiera wartosci z pol tekstowych do zmiennych
     const liczba1 = parseFloat(document.getElementById('liczba1').value) || 0;
     const liczba2 = parseFloat(document.getElementById('liczba2').value) || 0;
 
-    setCount(liczba1 + liczba2);
+    setCount2(liczba1 + liczba2);
+  };
+
+  const [count, setCount] = useState(0);
+
+  // Function to increment the number
+  const incrementCount = () => {
+    setCount(count + 1);
+  }
+
+  const [isPopupOpen, setPopupOpen] = useState(false);
+  const [currentDate, setCurrentDate] = useState('');
+
+  const openPopup = () => {
+    const today = new Date();
+    const options = { weekday: 'long', day: 'numeric', month: 'numeric', year: 'numeric' };
+    const formattedDate = new Intl.DateTimeFormat('pl-PL', options).format(today);
+    setCurrentDate(formattedDate);
+    setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setPopupOpen(false);
   };
 
 	return (
 		<div className="App">
       <header className="App-header">
-      
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -29,7 +51,30 @@ const Home = () => {
         >
           Learn React
         </a>
+
+          <header className="App-text">
+          <p>
+            {/* Display the current count */}
+            KLIKNIEC: {count}
+          </p>
+          {/* Button to increment the count */}
+          <button onClick={incrementCount}>zinkrementuj</button>
+          
+          {/* The rest of your content */}
+          {/* ... */}
+        </header>
+        <div className='window'>
+          <button type="submit" className="btn" onClick={openPopup}>Data</button>
+          <div className={`popup ${isPopupOpen ? 'open-popup' : ''}`} id="popup">
+            <img src="calendar.png" alt="calendar"></img>
+            <h2>Dzisiejsza data to:</h2>
+            <p>{currentDate}</p>
+            <button type="submit" onClick={closePopup}>OK</button>
+          </div>
+        </div>
       </header>
+      
+
       <header className="App-text">
       <p>
         Plecak pełen cashu wypełniony aż po brzegi
@@ -94,5 +139,6 @@ const Home = () => {
     </div>
 	);
 };
+
 
 export default Home;

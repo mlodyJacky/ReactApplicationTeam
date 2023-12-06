@@ -13,21 +13,6 @@ import Galeria from "./pages/galeria";
 import Komputery from "./pages/komputery";
 
 
-const liczba1 = document.getElementById("liczba1") as HTMLInputElement
-const liczba2 = document.getElementById("liczba2") as HTMLInputElement
-const przycisk = document.getElementById("przycisk") as HTMLButtonElement
-
-const suma = document.getElementById("suma") as HTMLOutputElement
-
-function wypisz(): void{
-  const sum1 = parseFloat(liczba1.value) + parseFloat(liczba2.value);
-  suma.textContent = sum1.toString();
-}
-
-if (przycisk) {
-  przycisk.addEventListener("click", wypisz);
-}
-
 function App() {
   return (
     <Router>
@@ -40,6 +25,8 @@ function App() {
                 />
             </Routes>
         </Router>
+
+  
     
  /*       
     <div className="App">
