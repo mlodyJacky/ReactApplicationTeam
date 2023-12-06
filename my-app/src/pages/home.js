@@ -1,8 +1,6 @@
 // Filename - pages/home.js
-import logo from '../bananki.jpg';
 import React, { useState } from 'react';
-
-
+import logo from '../bananki.jpg';
 
 const Home = () => {
   const [count, setCount] = useState(0);
@@ -11,10 +9,25 @@ const Home = () => {
   const incrementCount = () => {
     setCount(count + 1);
   }
+
+  const [isPopupOpen, setPopupOpen] = useState(false);
+  const [currentDate, setCurrentDate] = useState('');
+
+  const openPopup = () => {
+    const today = new Date();
+    const options = { weekday: 'long', day: 'numeric', month: 'numeric', year: 'numeric' };
+    const formattedDate = new Intl.DateTimeFormat('pl-PL', options).format(today);
+    setCurrentDate(formattedDate);
+    setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setPopupOpen(false);
+  };
+
 	return (
 		<div className="App">
       <header className="App-header">
-      
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -39,7 +52,18 @@ const Home = () => {
           {/* The rest of your content */}
           {/* ... */}
         </header>
+        <div className='window'>
+          <button type="submit" className="btn" onClick={openPopup}>Data</button>
+          <div className={`popup ${isPopupOpen ? 'open-popup' : ''}`} id="popup">
+            <img src="calendar.png" alt="calendar"></img>
+            <h2>Dzisiejsza data to:</h2>
+            <p>{currentDate}</p>
+            <button type="submit" onClick={closePopup}>OK</button>
+          </div>
+        </div>
       </header>
+      
+
       <header className="App-text">
       <p>
         Plecak pełen cashu wypełniony aż po brzegi
@@ -90,5 +114,6 @@ const Home = () => {
     </div>
 	);
 };
+
 
 export default Home;
