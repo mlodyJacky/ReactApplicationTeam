@@ -4,7 +4,7 @@ import logo from '../bananki.jpg';
 
 
 const Home = () => {
-  
+
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [currentDate, setCurrentDate] = useState('');
 
@@ -19,7 +19,6 @@ const Home = () => {
   const closePopup = () => {
     setPopupOpen(false);
   };
-
 
 	return (
 		<div className="App">
