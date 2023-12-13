@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from 'J:/InzynieriaOprogramowania/repo/laby1_repository/my-app/src/images/bananki.jpg';
+import logo from '../images/bananki.jpg';
 import calendar from '../images/calendar.png';
 
 const Home: React.FC = () => {
