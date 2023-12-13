@@ -2,11 +2,17 @@ import React, { FC, useState } from "react";
 
 const Komputery: FC = () => {
     const [inputValue, setInputValue] = useState<string>("");
-    const [listItems, setListItems] = useState<string[]>([]);
 
     const pushData = () => {
-        // Dodanie nowego tekstu do listy
-        setListItems([inputValue]);
+        let view = document.getElementById("view");
+
+        
+
+        // Dodanie nowego tekstu do pola listy
+        let newTd = document.createElement("li");
+        var node = document.createTextNode(inputValue);
+        newTd.appendChild(node);
+        view!.appendChild(newTd);
 
         // Wyczyszczenie pola tekstowego po dodaniu
         setInputValue("");
@@ -23,11 +29,7 @@ const Komputery: FC = () => {
             />
             <button onClick={pushData}>add to list</button>
 
-            <ul>
-                {listItems.map((item, index) => (
-                    <li key={index}>{item}</li>
-                ))}
-            </ul>
+            <ul id="view"></ul>
         </div>
     );
 };
