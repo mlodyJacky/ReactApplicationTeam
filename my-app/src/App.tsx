@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './bananki.jpg';
-import './App.css';
+import './style/App.css';
 import Navbar from "./components/Navbar/Navbar";
 import {
     BrowserRouter as Router,
@@ -11,7 +11,6 @@ import Home from "./pages/home";
 import Krzywa from "./pages/krzywa";
 import Galeria from "./pages/galeria";
 import Komputery from "./pages/komputery";
-
 
 function App() {
   return (
@@ -25,8 +24,6 @@ function App() {
                 />
             </Routes>
         </Router>
-
-  
     
  /*       
     <div className="App">
