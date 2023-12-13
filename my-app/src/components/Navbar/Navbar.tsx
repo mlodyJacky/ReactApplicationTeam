@@ -1,7 +1,7 @@
 // Filename - "./components/Navbar.tsx
 
 import React, { FC } from "react";
-import "../../style/NavbarElements.css";
+import '../../style/NavbarElements.css';
 
 const Navbar: FC = () => {
 	return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './bananki.jpg';
-import '../style/App.css';
+import './style/App.css';
 import Navbar from "./components/Navbar/Navbar";
 import {
     BrowserRouter as Router,
