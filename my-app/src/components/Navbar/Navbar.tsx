@@ -1,23 +1,23 @@
-// Filename - "./components/Navbar.js
+// Filename - "./components/Navbar.tsx
 
-import React from "react";
+import React, { FC } from "react";
 import { Nav, NavLink, NavMenu } from "./NavbarElements";
 
-const Navbar = () => {
+const Navbar: FC = () => {
 	return (
 		<>
 			<Nav>
 				<NavMenu>
-                <NavLink to="/home" activeStyle>
+                <NavLink to="/home" >
 						HOME
 					</NavLink>
-					<NavLink to="/galeria" activeStyle>
+					<NavLink to="/galeria">
 						GALERIA
 					</NavLink>
-					<NavLink to="/krzywa" activeStyle>
+					<NavLink to="/krzywa" >
 						KRZYWA
 					</NavLink>
-					<NavLink to="/komputery" activeStyle>
+					<NavLink to="/komputery">
 						KOMPUTERY
 					</NavLink>
 				</NavMenu>
