@@ -1,23 +1,35 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 
 const Komputery: FC = () => {
+    const [inputValue, setInputValue] = useState<string>("");
+
     const pushData = () => {
         let view = document.getElementById("view");
+
+        
+
+        // Dodanie nowego tekstu do pola listy
         let newTd = document.createElement("li");
-        var inputText = (document.getElementById("inputText") as HTMLInputElement).value;
-        var node = document.createTextNode(inputText);
+        var node = document.createTextNode(inputValue);
         newTd.appendChild(node);
-        view!.appendChild(newTd) ;
+        view!.appendChild(newTd);
+
+        // Wyczyszczenie pola tekstowego po dodaniu
+        setInputValue("");
     };
+
     return (
         <div>
-            <input type='text' name="text" id="inputText" />
+            <input
+                type='text'
+                name="text"
+                id="inputText"
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+            />
             <button onClick={pushData}>add to list</button>
 
-            <li>
-                <ul id="view">
-                </ul>
-            </li>
+            <ul id="view"></ul>
         </div>
     );
 };
