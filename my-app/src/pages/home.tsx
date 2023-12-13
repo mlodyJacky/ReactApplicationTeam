@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import logo from '../bananki.jpg';
+import logo from 'J:/InzynieriaOprogramowania/repo/laby1_repository/my-app/src/images/bananki.jpg';
+import calendar from '../images/calendar.png';
 
 const Home: React.FC = () => {
   const [suma1, setCount2] = useState<number>(0);
@@ -57,7 +58,7 @@ const Home: React.FC = () => {
         <div className='window'>
           <button type="submit" className="btn" onClick={openPopup}>Data</button>
           <div className={`popup ${isPopupOpen ? 'open-popup' : ''}`} id="popup">
-            <img src="calendar.png" alt="calendar"></img>
+            <img src={calendar} alt="calendar"></img>
             <h2>Dzisiejsza data to:</h2>
             <p>{currentDate}</p>
             <button type="submit" onClick={closePopup}>OK</button>
