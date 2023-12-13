@@ -1,13 +1,14 @@
 // Filename - pages/about.js
 
 import React from "react";
+import myszka from "../images/myszkamiki.png"
 
 const Krzywa = () => {
   return (
     <div>
       <h1>Jako użytkownik na podstronie Krzywa chcę widzieć określone zdjęcie</h1>
       <img
-        src="/myszkamiki.png" // Dodaj ścieżkę do pliku myszkamiki.png
+        src={myszka} // Dodaj ścieżkę do pliku myszkamiki.png
         alt="Zdjęcie myszkamiki"
         style={{ maxWidth: "100%" }} // Dostosuj styl, jeśli to konieczne
       />
