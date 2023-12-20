@@ -2,6 +2,7 @@
 
 import React from "react";
 import myszka from "../images/myszkamiki.png"
+import cake from "../images/cake.jpg"
 
 const Krzywa = () => {
   return (
@@ -15,6 +16,17 @@ const Krzywa = () => {
       <h1>
         https://pawkrz.atlassian.net/browse/SCRUM-22?atlOrigin=eyJpIjoiODJjYmM3OWZhNDIxNGE4NmFlYWNiMDIxZWViMmUxM2UiLCJwIjoiaiJ9
       </h1>
+
+      <img
+        src={cake} // Dodaj ścieżkę do pliku myszkamiki.png
+        alt="Zdjęcie cake" 
+        style={{ maxWidth: "100%" }} // Dostosuj styl, jeśli to konieczne
+      />
+      <h1>
+        Przepyszne ciasto z kremem. Mmm!!!
+      </h1>
+
+
     </div>
   );
 };
