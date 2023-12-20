@@ -1,4 +1,5 @@
 .App {
+  background-color: rgb(255, 197, 73);
   text-align: center;
 }
 
@@ -37,6 +38,7 @@ line-height: normal;
 }
 
 .App-link {
+  font-size: 48px;
   color: rgb(18, 81, 255);
   -webkit-text-stroke: 2px black;
 }
