@@ -1,19 +1,16 @@
 // Filename - pages/about.js
 
 import React from "react";
-import myszka from "../images/myszkamiki.png"
+import myszka from "../images/myszkamiki.png";
+import '../style/mysza.css';
 
 const Krzywa = () => {
   return (
-    <div>
-      <h1>Jako użytkownik na podstronie Krzywa chcę widzieć określone zdjęcie</h1>
-      <img
-        src={myszka} // Dodaj ścieżkę do pliku myszkamiki.png
-        alt="Zdjęcie myszkamiki"
-        style={{ maxWidth: "100%" }} // Dostosuj styl, jeśli to konieczne
-      />
+    <div className="center">
+      <br></br>
+      <img className="mysza" src={myszka} alt="Zdjęcie myszkamiki"/>
       <h1>
-        https://pawkrz.atlassian.net/browse/SCRUM-22?atlOrigin=eyJpIjoiODJjYmM3OWZhNDIxNGE4NmFlYWNiMDIxZWViMmUxM2UiLCJwIjoiaiJ9
+        Mysza!!!
       </h1>
     </div>
   );
