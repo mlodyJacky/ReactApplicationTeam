@@ -1,4 +1,5 @@
 import React, { FC, useState } from "react";
+import computer from '../images/komputer.jpg';
 
 const Komputery: FC = () => {
     const [inputValue, setInputValue] = useState<string>("");
@@ -20,6 +21,7 @@ const Komputery: FC = () => {
 
     return (
         <div>
+            <img src={computer} alt="computer" width="500" height="587"></img>
             <input
                 type='text'
                 name="text"
