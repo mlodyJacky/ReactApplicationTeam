@@ -50,10 +50,10 @@ const Home: React.FC = () => {
         </a>
 
         <header className="App-text">
-          <p>
+          <p className='click'>
             KLIKNIEC: {count}
           </p>
-          <button onClick={incrementCount}>zinkrementuj</button>
+          <button className='click' onClick={incrementCount}>zinkrementuj</button>
         </header>
         <div className='window'>
           <button type="submit" className="btn" onClick={openPopup}>Data</button>
