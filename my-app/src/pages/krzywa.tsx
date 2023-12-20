@@ -3,6 +3,7 @@
 import React from "react";
 import myszka from "../images/myszkamiki.png";
 import '../style/mysza.css';
+import cake from "../images/cake.jpg"
 
 const Krzywa = () => {
   return (
@@ -12,6 +13,17 @@ const Krzywa = () => {
       <h1>
         Mysza!!!
       </h1>
+
+      <img
+        src={cake} // Dodaj ścieżkę do pliku myszkamiki.png
+        alt="Zdjęcie cake" 
+        style={{ maxWidth: "100%" }} // Dostosuj styl, jeśli to konieczne
+      />
+      <h1>
+        Przepyszne ciasto z kremem. Mmm!!!
+      </h1>
+
+
     </div>
   );
 };
