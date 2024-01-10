@@ -123,6 +123,12 @@ const Home: React.FC = () => {
         <button id="przycisk" onClick={wypisz}>Dodaj</button>
         <br></br>
         <h1>Suma: {suma1}</h1>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        
       </header>
     </div>
   );

@@ -29,18 +29,23 @@
       .container {
           display: flex; /* Ustawienie kontenera na flexbox */
           align-items: center; /* Wyrównanie elementów w pionie */
+          background-color: rgb(255, 175, 3);
+          padding: 20px; /* Dodanie wypełnienia dla lepszego wyglądu */
       }
 
       img {
           max-width: 100%; /* Ustawienie, aby obraz nie przekraczał szerokości kontenera */
           height: auto; /* Ustawienie, aby proporcje obrazu były zachowane */
       }
+      .root {
+        background-color: rgb(255, 175, 3);
+      }
   </style>
   </head>
   <body>
     <div class="container">
       <img src="jablkoPrawidlowe.jpg" alt="jabłko">
-      <h1>This text is created by Krzysztof</h1>   
+      <h1>This text is created by Krzysztof</h1>
     </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
@@ -55,5 +60,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
   </body>
 </html>

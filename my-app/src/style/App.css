@@ -1,4 +1,5 @@
 .App {
+  background-color: rgb(255, 197, 73);
   text-align: center;
 }
 
@@ -14,19 +15,20 @@
 }
 
 .App-header {
-  background-color: rgb(22, 121, 121);
+  background-color: rgb(255, 197, 73);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(40px + 2vmin);
-  color: rgb(255, 255, 255);
+  color: rgb(18, 81, 255);
   font-weight: bold;
   -webkit-text-stroke: 2px black;
 }
 
 .App-text {
+background-color: rgb(255, 197, 73);
 color: #000;
 font-family: fantasy;
 font-size: 16px;
@@ -36,7 +38,9 @@ line-height: normal;
 }
 
 .App-link {
-  color: #484fb6;
+  font-size: 48px;
+  color: rgb(18, 81, 255);
+  -webkit-text-stroke: 2px black;
 }
 
 @keyframes App-logo-spin {
@@ -50,6 +54,7 @@ line-height: normal;
 
 
 .window {
+  background-color: rgb(255, 197, 73);
   width: 79%;
   height: 5vh;
   display: flex;
@@ -57,7 +62,7 @@ line-height: normal;
 }
 .btn {
   padding: 10px 60px;
-  background: #fff;
+  background: rgb(18, 81, 255);
   border: 0;
   outline: none;
   cursor: pointer;
@@ -67,7 +72,7 @@ line-height: normal;
 }
 .popup {
   width: 400px;
-  background: #fff;
+  background: rgb(2, 1, 0);
   border-radius: 6px;
   position: absolute;
   top: 0;
